@@ -1,0 +1,289 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79FC726018442BA700F590C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FC725F18442BA700F590C0 /* UIKit.framework */; };
+		79FC726218442BA700F590C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FC726118442BA700F590C0 /* Foundation.framework */; };
+		79FC726418442BA700F590C0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FC726318442BA700F590C0 /* CoreGraphics.framework */; };
+		79FC726A18442BA700F590C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79FC726818442BA700F590C0 /* InfoPlist.strings */; };
+		79FC726C18442BA700F590C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FC726B18442BA700F590C0 /* main.m */; };
+		79FC727018442BA700F590C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FC726F18442BA700F590C0 /* AppDelegate.m */; };
+		79FC727218442BA700F590C0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FC727118442BA700F590C0 /* Default.png */; };
+		79FC727418442BA700F590C0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FC727318442BA700F590C0 /* Default@2x.png */; };
+		79FC727618442BA700F590C0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FC727518442BA700F590C0 /* Default-568h@2x.png */; };
+		79FC727D18442C4E00F590C0 /* card.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FC727C18442C4E00F590C0 /* card.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		79FC725C18442BA700F590C0 /* CardScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79FC725F18442BA700F590C0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		79FC726118442BA700F590C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		79FC726318442BA700F590C0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		79FC726718442BA700F590C0 /* CardScan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CardScan-Info.plist"; sourceTree = "<group>"; };
+		79FC726918442BA700F590C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79FC726B18442BA700F590C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		79FC726D18442BA700F590C0 /* CardScan-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CardScan-Prefix.pch"; sourceTree = "<group>"; };
+		79FC726E18442BA700F590C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		79FC726F18442BA700F590C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		79FC727118442BA700F590C0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		79FC727318442BA700F590C0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		79FC727518442BA700F590C0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		79FC727C18442C4E00F590C0 /* card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79FC725918442BA700F590C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79FC726018442BA700F590C0 /* UIKit.framework in Frameworks */,
+				79FC726218442BA700F590C0 /* Foundation.framework in Frameworks */,
+				79FC726418442BA700F590C0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79FC725318442BA700F590C0 = {
+			isa = PBXGroup;
+			children = (
+				79FC726518442BA700F590C0 /* CardScan */,
+				79FC725E18442BA700F590C0 /* Frameworks */,
+				79FC725D18442BA700F590C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79FC725D18442BA700F590C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79FC725C18442BA700F590C0 /* CardScan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79FC725E18442BA700F590C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79FC725F18442BA700F590C0 /* UIKit.framework */,
+				79FC726118442BA700F590C0 /* Foundation.framework */,
+				79FC726318442BA700F590C0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79FC726518442BA700F590C0 /* CardScan */ = {
+			isa = PBXGroup;
+			children = (
+				79FC726E18442BA700F590C0 /* AppDelegate.h */,
+				79FC726F18442BA700F590C0 /* AppDelegate.m */,
+				79FC726618442BA700F590C0 /* Supporting Files */,
+			);
+			path = CardScan;
+			sourceTree = "<group>";
+		};
+		79FC726618442BA700F590C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79FC727C18442C4E00F590C0 /* card.png */,
+				79FC726718442BA700F590C0 /* CardScan-Info.plist */,
+				79FC726818442BA700F590C0 /* InfoPlist.strings */,
+				79FC726B18442BA700F590C0 /* main.m */,
+				79FC726D18442BA700F590C0 /* CardScan-Prefix.pch */,
+				79FC727118442BA700F590C0 /* Default.png */,
+				79FC727318442BA700F590C0 /* Default@2x.png */,
+				79FC727518442BA700F590C0 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79FC725B18442BA700F590C0 /* CardScan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79FC727918442BA700F590C0 /* Build configuration list for PBXNativeTarget "CardScan" */;
+			buildPhases = (
+				79FC725818442BA700F590C0 /* Sources */,
+				79FC725918442BA700F590C0 /* Frameworks */,
+				79FC725A18442BA700F590C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardScan;
+			productName = CardScan;
+			productReference = 79FC725C18442BA700F590C0 /* CardScan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79FC725418442BA700F590C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Dawn;
+			};
+			buildConfigurationList = 79FC725718442BA700F590C0 /* Build configuration list for PBXProject "CardScan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 79FC725318442BA700F590C0;
+			productRefGroup = 79FC725D18442BA700F590C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79FC725B18442BA700F590C0 /* CardScan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79FC725A18442BA700F590C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79FC726A18442BA700F590C0 /* InfoPlist.strings in Resources */,
+				79FC727218442BA700F590C0 /* Default.png in Resources */,
+				79FC727418442BA700F590C0 /* Default@2x.png in Resources */,
+				79FC727618442BA700F590C0 /* Default-568h@2x.png in Resources */,
+				79FC727D18442C4E00F590C0 /* card.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79FC725818442BA700F590C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79FC726C18442BA700F590C0 /* main.m in Sources */,
+				79FC727018442BA700F590C0 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		79FC726818442BA700F590C0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79FC726918442BA700F590C0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79FC727718442BA700F590C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		79FC727818442BA700F590C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79FC727A18442BA700F590C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CardScan/CardScan-Prefix.pch";
+				INFOPLIST_FILE = "CardScan/CardScan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		79FC727B18442BA700F590C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CardScan/CardScan-Prefix.pch";
+				INFOPLIST_FILE = "CardScan/CardScan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79FC725718442BA700F590C0 /* Build configuration list for PBXProject "CardScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79FC727718442BA700F590C0 /* Debug */,
+				79FC727818442BA700F590C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79FC727918442BA700F590C0 /* Build configuration list for PBXNativeTarget "CardScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79FC727A18442BA700F590C0 /* Debug */,
+				79FC727B18442BA700F590C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79FC725418442BA700F590C0 /* Project object */;
+}
