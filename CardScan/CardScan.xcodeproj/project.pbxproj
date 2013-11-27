@@ -12,11 +12,13 @@
 		79FC726418442BA700F590C0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FC726318442BA700F590C0 /* CoreGraphics.framework */; };
 		79FC726A18442BA700F590C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79FC726818442BA700F590C0 /* InfoPlist.strings */; };
 		79FC726C18442BA700F590C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FC726B18442BA700F590C0 /* main.m */; };
-		79FC727018442BA700F590C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FC726F18442BA700F590C0 /* AppDelegate.m */; };
+		79FC727018442BA700F590C0 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 79FC726F18442BA700F590C0 /* AppDelegate.mm */; };
 		79FC727218442BA700F590C0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FC727118442BA700F590C0 /* Default.png */; };
 		79FC727418442BA700F590C0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FC727318442BA700F590C0 /* Default@2x.png */; };
 		79FC727618442BA700F590C0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FC727518442BA700F590C0 /* Default-568h@2x.png */; };
 		79FC727D18442C4E00F590C0 /* card.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FC727C18442C4E00F590C0 /* card.png */; };
+		79FC727F18459C5B00F590C0 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FC727E18459C5B00F590C0 /* opencv2.framework */; };
+		79FC72821845A19300F590C0 /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 79FC72811845A19300F590C0 /* UIImage+OpenCV.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +31,14 @@
 		79FC726B18442BA700F590C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		79FC726D18442BA700F590C0 /* CardScan-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CardScan-Prefix.pch"; sourceTree = "<group>"; };
 		79FC726E18442BA700F590C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		79FC726F18442BA700F590C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		79FC726F18442BA700F590C0 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		79FC727118442BA700F590C0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		79FC727318442BA700F590C0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		79FC727518442BA700F590C0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		79FC727C18442C4E00F590C0 /* card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card.png; sourceTree = "<group>"; };
+		79FC727E18459C5B00F590C0 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = CardScan/opencv2.framework; sourceTree = "<group>"; };
+		79FC72801845A19300F590C0 /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		79FC72811845A19300F590C0 /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +49,7 @@
 				79FC726018442BA700F590C0 /* UIKit.framework in Frameworks */,
 				79FC726218442BA700F590C0 /* Foundation.framework in Frameworks */,
 				79FC726418442BA700F590C0 /* CoreGraphics.framework in Frameworks */,
+				79FC727F18459C5B00F590C0 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +76,7 @@
 		79FC725E18442BA700F590C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79FC727E18459C5B00F590C0 /* opencv2.framework */,
 				79FC725F18442BA700F590C0 /* UIKit.framework */,
 				79FC726118442BA700F590C0 /* Foundation.framework */,
 				79FC726318442BA700F590C0 /* CoreGraphics.framework */,
@@ -81,7 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				79FC726E18442BA700F590C0 /* AppDelegate.h */,
-				79FC726F18442BA700F590C0 /* AppDelegate.m */,
+				79FC726F18442BA700F590C0 /* AppDelegate.mm */,
+				79FC72801845A19300F590C0 /* UIImage+OpenCV.h */,
+				79FC72811845A19300F590C0 /* UIImage+OpenCV.mm */,
 				79FC726618442BA700F590C0 /* Supporting Files */,
 			);
 			path = CardScan;
@@ -169,7 +178,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				79FC726C18442BA700F590C0 /* main.m in Sources */,
-				79FC727018442BA700F590C0 /* AppDelegate.m in Sources */,
+				79FC727018442BA700F590C0 /* AppDelegate.mm in Sources */,
+				79FC72821845A19300F590C0 /* UIImage+OpenCV.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +201,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -202,6 +212,7 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -221,7 +232,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -231,6 +242,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -244,6 +256,10 @@
 		79FC727A18442BA700F590C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/CardScan\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CardScan/CardScan-Prefix.pch";
 				INFOPLIST_FILE = "CardScan/CardScan-Info.plist";
@@ -255,6 +271,10 @@
 		79FC727B18442BA700F590C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/CardScan\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CardScan/CardScan-Prefix.pch";
 				INFOPLIST_FILE = "CardScan/CardScan-Info.plist";
