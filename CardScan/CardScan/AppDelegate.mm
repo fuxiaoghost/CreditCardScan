@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "opencv2/opencv.hpp"
 #import "UIImage+OpenCV.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation AppDelegate
 
@@ -29,7 +30,7 @@
     cardView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 40, 320, 320 * 292.0/457)];
     [self.window addSubview:cardView];
     [cardView release];
-    cardView.image = [UIImage imageNamed:@"card.png"];
+    cardView.image = [UIImage imageNamed:@"card3.png"];
     
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -43,6 +44,7 @@
 }
 
 - (void) imageToDeal{
+    /*
     UIImage *inputImage = cardView.image;
     cv::Mat inputMat = [inputImage CVMat];
     cv::Mat grayMat;
@@ -65,8 +67,78 @@
     UIImage *newImage = [UIImage imageWithCVMat:blur];
     
     cardView.image = newImage;
-}
+     */
+//    UIImage *cardImage = [[UIImage alloc] initWithCGImage:cardView.image.CGImage];
+//    cardView.image = [self grayscale:cardImage type:1];
+//    [cardImage release];
+    
+    UIImage *inputImage = cardView.image;
+    cv::Mat inputMat = [inputImage CVMat];
+    
+    cv::Mat gray;
+    cv::cvtColor(inputMat, gray, CV_RGB2GRAY);
+    
+    
+    //cv::Mat blur;
+    //cv::medianBlur(gray, blur, 3);
+    
+    cv::Mat bin;
+    cv::threshold(gray, bin,80, 255, CV_THRESH_BINARY_INV);
+    
+//    cv::Mat commonBlur;
+//    cv::blur(bin, commonBlur, cv::Size(4,4));
+    
+    cv::Mat blur;
+    cv::medianBlur(bin, blur, 3);
+ 
+    cv::Mat erode;
+    cv::Mat element = cv::getStructuringElement(0,cv::Size( 3, 3 ),cv::Point( 0, 0 ) );
+    cv::erode(blur, erode, element);
+    
+    cv::Mat dilate;
+    cv::Mat element2 = cv::getStructuringElement(0,cv::Size(2,2 ),cv::Point( 0, 0 ) );
+    cv::dilate(erode, dilate, element2);
+    
+    
+    cv::Mat bin2;
+    cv::threshold(dilate, bin2, 100, 255, CV_THRESH_BINARY_INV);
+    
 
+    
+    UIImage *newImage = [UIImage imageWithCVMat:bin2];
+    cardView.image = newImage;
+    
+
+    cv::vector< cv::vector<cv::Point> > contours;
+    cv::findContours(bin2, contours, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_NONE);
+    
+    
+    cv::vector<cv::vector<cv::Point> >::iterator it = contours.begin();
+    while (it!=contours.end()) {
+        cv::RotatedRect rect = minAreaRect(cv::Mat(*it));
+        if(rect.size.height < 30 && rect.size.height > 10 && rect.center.y > 150 && rect.center.y < 195 ){
+            ++it; // A valid rectangle found
+        } else {
+            it= contours.erase(it);
+        }
+    }
+
+    cv::vector<cv::Rect> boundRect(contours.size());
+    for (int i = 0; i < contours.size(); ++i) {
+        boundRect[i] = cv::boundingRect(cv::Mat(contours[i]));
+        
+        NSLog(@"%d,%d,%d,%d",boundRect[i].x,boundRect[i].y,boundRect[i].width,boundRect[i].height);
+        
+        UILabel *testLbl = [[UILabel alloc] initWithFrame:CGRectMake(boundRect[i].x * 320.0/457, boundRect[i].y*320.0/457, boundRect[i].width*320.0/457, boundRect[i].height*320.0/457)];
+        testLbl.layer.borderColor = [UIColor greenColor].CGColor;
+        testLbl.layer.borderWidth = 2.0f;
+        [cardView addSubview:testLbl];
+        [testLbl release];
+        
+        
+    }
+
+}
 
 - (UIImage*) grayscale:(UIImage*)anImage type:(char)type {
     CGImageRef  imageRef;
@@ -131,12 +203,14 @@
             switch (type) {
                 case 1://モノクロ
                     // 輝度計算
-                    brightness = 0.299 * red + 0.587 * green + 0.114 * blue;
-                    if (brightness > 125) {
+                    brightness = MAX(blue,MAX(red, green)); // 0.299 * red + 0.587 * green + 0.114 * blue;
+                    /*
+                    if (brightness > 200) {
                         brightness = 0;
                     }else{
                         brightness = 255;
                     }
+                     */
 
                     *(tmp + 0) = brightness;
                     *(tmp + 1) = brightness;

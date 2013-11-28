@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7939C8A71847286E00F0B103 /* card4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7939C8A6184727F800F0B103 /* card4.png */; };
+		7939C8A918472D8100F0B103 /* card5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7939C8A818472D7500F0B103 /* card5.png */; };
+		79BF60BE18471E26007F2F95 /* card2.png in Resources */ = {isa = PBXBuildFile; fileRef = 79BF60BD18471E26007F2F95 /* card2.png */; };
+		79BF60C0184723F8007F2F95 /* card3.png in Resources */ = {isa = PBXBuildFile; fileRef = 79BF60BF184723F8007F2F95 /* card3.png */; };
 		79FC726018442BA700F590C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FC725F18442BA700F590C0 /* UIKit.framework */; };
 		79FC726218442BA700F590C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FC726118442BA700F590C0 /* Foundation.framework */; };
 		79FC726418442BA700F590C0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FC726318442BA700F590C0 /* CoreGraphics.framework */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7939C8A6184727F800F0B103 /* card4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card4.png; sourceTree = "<group>"; };
+		7939C8A818472D7500F0B103 /* card5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card5.png; sourceTree = "<group>"; };
+		79BF60BD18471E26007F2F95 /* card2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card2.png; sourceTree = "<group>"; };
+		79BF60BF184723F8007F2F95 /* card3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card3.png; sourceTree = "<group>"; };
 		79FC725C18442BA700F590C0 /* CardScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79FC725F18442BA700F590C0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		79FC726118442BA700F590C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -99,6 +107,10 @@
 		79FC726618442BA700F590C0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7939C8A818472D7500F0B103 /* card5.png */,
+				7939C8A6184727F800F0B103 /* card4.png */,
+				79BF60BF184723F8007F2F95 /* card3.png */,
+				79BF60BD18471E26007F2F95 /* card2.png */,
 				79FC727C18442C4E00F590C0 /* card.png */,
 				79FC726718442BA700F590C0 /* CardScan-Info.plist */,
 				79FC726818442BA700F590C0 /* InfoPlist.strings */,
@@ -162,11 +174,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7939C8A918472D8100F0B103 /* card5.png in Resources */,
+				7939C8A71847286E00F0B103 /* card4.png in Resources */,
 				79FC726A18442BA700F590C0 /* InfoPlist.strings in Resources */,
 				79FC727218442BA700F590C0 /* Default.png in Resources */,
 				79FC727418442BA700F590C0 /* Default@2x.png in Resources */,
 				79FC727618442BA700F590C0 /* Default-568h@2x.png in Resources */,
 				79FC727D18442C4E00F590C0 /* card.png in Resources */,
+				79BF60BE18471E26007F2F95 /* card2.png in Resources */,
+				79BF60C0184723F8007F2F95 /* card3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +318,7 @@
 				79FC727B18442BA700F590C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
