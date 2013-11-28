@@ -131,7 +131,8 @@
         
         UILabel *testLbl = [[UILabel alloc] initWithFrame:CGRectMake(boundRect[i].x * 320.0/457, boundRect[i].y*320.0/457, boundRect[i].width*320.0/457, boundRect[i].height*320.0/457)];
         testLbl.layer.borderColor = [UIColor greenColor].CGColor;
-        testLbl.layer.borderWidth = 2.0f;
+        testLbl.layer.borderWidth = 1.0f;
+        testLbl.backgroundColor = [UIColor clearColor];
         [cardView addSubview:testLbl];
         [testLbl release];
         
